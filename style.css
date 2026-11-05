@@ -1,0 +1,191 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #fff0f5,
+        #ffd6e5
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Kotak kalkulator */
+.container {
+    background: #fffafa;
+
+    width: 90%;
+    max-width: 420px;
+
+    padding: 30px;
+
+    border: 3px solid #ffc1d6;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px #e9a6bc55;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+
+    color: #d86b91;
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+
+    color: #b8798e;
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+/* Label input */
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #b45f7d;
+    font-weight: bold;
+}
+
+/* Kotak input */
+.input-group input {
+    width: 100%;
+
+    padding: 14px;
+    margin-bottom: 20px;
+
+    border: 2px solid #ffc1d6;
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+    outline: none;
+}
+
+/* Efek input */
+.input-group input:focus {
+    border-color: #e88bab;
+
+    box-shadow: 0 0 8px #ffc1d6;
+}
+
+/* Susunan tombol */
+.buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+/* Tombol */
+button {
+    padding: 15px 10px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #f7a8c4,
+        #ee82a8
+    );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 0 #d96e94;
+
+    transition: 0.3s;
+}
+
+/* Efek saat tombol disentuh */
+button:hover {
+    background: #e77fa4;
+
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+
+    box-shadow: 0 2px 0 #d96e94;
+}
+
+/* Kotak hasil */
+.hasil-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #fff0f5;
+
+    border: 2px solid #ffc1d6;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+/* Judul hasil */
+.hasil-box h3 {
+    color: #b45f7d;
+
+    margin-bottom: 12px;
+
+    font-size: 17px;
+}
+
+/* Angka hasil */
+#hasil {
+    color: #e879a0;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    overflow-wrap: anywhere;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+}
